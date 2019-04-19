@@ -84,6 +84,9 @@ filetype plugin indent on "required
 let g:ycm_confirm_extra_conf=0
 let g:ycm_error_symbol='>>'
 let g:ycm_warning_symbol='>*'
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_enable_diagnostic_signs = 0 
+let g:ycm_enable_diagnostic_highlighting = 0
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
@@ -95,4 +98,4 @@ let g:airline_powerline_fonts = 1
 nnoremap <C-N> :bn<CR>
 nnoremap <C-P> :bp<CR>
 
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-z>"
